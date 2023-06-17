@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Weather Information</h1>
+    <p>Location: {{ location }}</p>
+    <p>Temperature: {{ temperature }} &deg;C</p>
+    <p>Condition: {{ condition }}</p>
+
+    <h2>Questions</h2>
+    {% for qa in qa_data %}
+        <p>
+            <strong>{{ qa.question }}</strong><br>
+            {{ qa.answer }}
+        </p>
+    {% endfor %}
+</body>
+</html>

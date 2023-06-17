@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zipcode Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Enter a Zipcode</h1>
+    <form action="/zipcode" method="post">
+        <input type="text" name="zipcode" placeholder="Enter a zipcode">
+        <button type="submit">Submit</button>
+        {% if note %}
+            <p>Please enter a zip code.</p>
+        {% endif %}
+    </form>
+</body>
+</html>
