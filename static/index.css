@@ -1,0 +1,28 @@
+/* base-styles.css */
+@import url("styles.css");
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Modern button style */
+  button {
+    padding: 10px 20px;
+    background-color: #87CEEB; /* Sky blue color */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for button */
+  button:hover {
+    background-color: #5CACEE; /* Darker sky blue color on hover */
+  }
+  
